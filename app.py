@@ -34,7 +34,7 @@ def index():
             logging.getLogger('urbanGUI')
             # mongodb: // localhost: 27017 /
             dbConn = pymongo.MongoClient(
-                "mongodb+srv://srinivasaravi:4Alq22JSGlSJZD2f@srinivasaahlad.njxzl.mongodb.net/ImagecrawlerDB?retryWrites=true&w=majority")  # opening a connection to Mongo
+                "mongodb+srv://<username>:<password>@srinivasaahlad.njxzl.mongodb.net/ImagecrawlerDB?retryWrites=true&w=majority")  # opening a connection to Mongo
             logging.info('Database Connection Success')
             db = dbConn['ImagecrawlerDB']  # connecting to the database called crawlerDB
             logging.info('connecting to the database called ImagecrawlerDB : Success')
